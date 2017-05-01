@@ -8,6 +8,10 @@ get "/" do
   erb(:home)
 end
 
+get "/instructions" do
+  erb(:instructions)
+end
+
 get "/about" do
   erb(:about)
 end
