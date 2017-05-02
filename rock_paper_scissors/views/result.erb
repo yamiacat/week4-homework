@@ -2,9 +2,11 @@
 
 <h2>The players launch and... </h2>
 
-<h1><%= @game %></h1>
 
-
-<div id="over">
-<img src="<%= url('/boom4.gif') %>" alt="nuclear blast"/>
-</div>
+<%if @game == "MUTUALLY ASSURED DESTRUCTION! Launch again!"%>
+  <h1><%= @game %></h1>
+  <img class="imageblock" src="<%= url('/boom10.gif') %>" alt="nuclear blast"/>
+<%else%>
+  <h1><%= @game %></h1>
+<img class="imageblock" src="<%= url('/boom4.gif') %>" alt="nuclear blast"/>
+<%end%>
