@@ -1,0 +1,15 @@
+<h5>Order View</h5>
+
+<p>Order Number: <%= @pizza.id() %> </p>
+<p>Customer Name: <%= @pizza.pretty_name() %> </p>
+<p>Order: <%= @pizza.quantity() %> x <%= @pizza.topping() %> </p>
+<p>Total: £<%= @pizza.total() %> </p>
+
+<form action="/pizzas/<%= @pizza.id %>/edit" method="GET">
+  <input type="submit" value="Edit Order">
+</form>
+
+<form action="/pizzas/<%= @pizza.id %>/delete" method="POST">
+  <input type="submit" value="Cancel Order">
+</form>
+<hr/>
