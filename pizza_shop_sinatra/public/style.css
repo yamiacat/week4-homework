@@ -1,4 +1,4 @@
-header, h2 {
+header, h2, nav, a {
   font-family: 'Atomic Age', cursive;
 }
 
@@ -14,4 +14,8 @@ p, select, input {
 
 form {
   display: inline;
+}
+
+a, {
+    font-size: 120% ;
 }
