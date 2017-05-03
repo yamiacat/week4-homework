@@ -6,12 +6,12 @@
   <input type="text" name="last_name" id="last-name-field" value="<%= @pizza.last_name %>">
   <label for="pizza-select">Select your pizza:</label>
   <select id="pizza-select" name="topping">
-    <option selected disabled>Please Confirm</option>
-    <option value="Margherita">Margherita</option>
-    <option value="Veneziana">Veneziana</option>
-    <option value="Veggie">Veggie</option>
-    <option value="Italian Sausage">Italian Sausage</option>
-    <option value="Pepperoni">Pepperoni</option>
+    <% all_toppings = ["Margherita", "Veneziana", "Veggie", "Italian Sausage", "Pepporoni"] %>
+    <% all_toppings.each do |topping| %>
+      <option <%= "selected" if @pizza.topping == topping %> value="<%= topping %>">
+        <%= topping %>
+      </option>
+    <% end %>
   </select>
 
   <label for="quantity-field">Quantity</label>

@@ -1,5 +1,5 @@
-<p>All the pizzas</p>
-
+<h2>All Pizza Orders</h2>
+<hr/>
 <% @pizzas.each do |pizza| %>
 <p>Name: <%= pizza.pretty_name() %> </p>
 <p>Order: <%= pizza.quantity() %> x <%= pizza.topping() %> </p>

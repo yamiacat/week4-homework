@@ -1,0 +1,17 @@
+header, h2 {
+  font-family: 'Atomic Age', cursive;
+}
+
+body {
+  font-family: sans-serif;
+  background: url("./pizza.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+p, select, input {
+  font-size: 110% ;
+}
+
+form {
+  display: inline;
+}
